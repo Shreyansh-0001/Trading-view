@@ -1,0 +1,26 @@
+{
+  "name": "tradingview-clone",
+  "version": "1.0.0",
+  "description": "A full-featured TradingView clone with real-time market data",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "start": "concurrently \"npm run backend:start\" \"npm run frontend:start\"",
+    "backend:dev": "cd backend && npm run dev",
+    "backend:start": "cd backend && npm start",
+    "backend:install": "cd backend && npm install",
+    "frontend:dev": "cd frontend && npm start",
+    "frontend:start": "cd frontend && npm start",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:install": "cd frontend && npm install",
+    "install:all": "npm run backend:install && npm run frontend:install",
+    "setup": "npm install && npm run install:all",
+    "build": "npm run frontend:build"
+  },
+  "keywords": ["trading", "stocks", "react", "nodejs", "mongodb", "websocket"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
