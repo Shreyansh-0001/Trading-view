@@ -1,0 +1,23 @@
+{
+  "name": "khet-khaliyan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:shared && npm run build:server && echo 'skip web build (requires Node 20)'",
+    "build:all": "npm -ws run build",
+    "build:server": "npm --workspace @kk/server run build",
+    "build:web": "npm --workspace @kk/web run build",
+    "build:shared": "npm --workspace @kk/shared run build",
+    "dev": "npm -ws run dev",
+    "lint": "npm -ws run lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Apps: web (Next.js PWA), server (Node/Express), mobile (Expo).",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

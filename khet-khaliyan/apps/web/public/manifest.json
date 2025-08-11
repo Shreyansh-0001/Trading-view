@@ -1,0 +1,9 @@
+{
+  "name": "Khet Khaliyan",
+  "short_name": "Khet",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#8B0000",
+  "icons": []
+}
